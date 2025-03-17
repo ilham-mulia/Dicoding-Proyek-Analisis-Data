@@ -23,7 +23,7 @@ df_day["hour"] = None
 df_combined = pd.concat([df_day, df_hour], ignore_index=True)
 
 # Simpan hasil gabungan sebagai main_data.csv
-df_combined.to_csv("dashboard/main_data.csv", index=False)
+df_combined.to_csv("https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/dashboard/main_data.csv", index=False)
 
 
 
