@@ -5,8 +5,16 @@ import seaborn as sns
 
 # Load Dataset
 # Load dataset
-df_day = pd.read_csv("data/day.csv")
-df_hour = pd.read_csv("data/hour.csv")
+# df_day = pd.read_csv("data/day.csv")
+# df_hour = pd.read_csv("data/hour.csv")
+
+# URL raw dari GitHub
+url_day = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Data/day.csv"
+url_hour = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Data/hour.csv"
+
+# Load dataset langsung dari GitHub
+df_day = pd.read_csv(url_day)
+df_hour = pd.read_csv(url_hour)
 
 # Tambahkan kolom 'hour' pada df_day agar kompatibel dengan df_hour
 df_day["hour"] = None  
