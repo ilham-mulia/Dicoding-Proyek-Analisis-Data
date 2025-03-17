@@ -22,7 +22,7 @@ df_day["hour"] = None
 # Gabungkan dataset berdasarkan tanggal (dteday)
 df_combined = pd.concat([df_day, df_hour], ignore_index=True)
 
-# Simpan hasil gabungan sebagai main_data.csv
+# Simpan hasil gabungan sebagai main_data.csv dan ini di komen karena kita upload ke https://dicoding-ilham-mulia.streamlit.app/ jdai di komen, jika tdk di upload tdk perlu di komen
 # df_combined.to_csv("main/dashboard/main_data.csv", index=False)
 
 
