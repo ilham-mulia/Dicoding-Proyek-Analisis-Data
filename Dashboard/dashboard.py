@@ -3,9 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Load Dataset
-df_day = pd.read_csv("data/day.csv")
-df_hour = pd.read_csv("data/hour.csv")
+# Gunakan raw URL dari GitHub untuk membaca dataset langsung
+url_day = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Data/day.csv"
+url_hour = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Data/hour.csv"
+
+df_day = pd.read_csv(url_day)
+df_hour = pd.read_csv(url_hour)
 
 # Tambahkan kolom 'hour' pada df_day agar kompatibel dengan df_hour
 df_day["hour"] = None  
@@ -13,8 +16,8 @@ df_day["hour"] = None
 # Gabungkan dataset berdasarkan tanggal (dteday)
 df_combined = pd.concat([df_day, df_hour], ignore_index=True)
 
-# Simpan hasil gabungan sebagai main_data.csv
-df_combined.to_csv("dashboard/main_data.csv", index=False)
+url_main = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Dashboard/main_data.csv"
+df_combined = pd.read_csv(url_main)
 
 # Judul Dashboard
 st.title("📊 Dashboard Analisis Penyewaan Sepeda 🚲")
