@@ -16,8 +16,8 @@ df_day["hour"] = None
 # Gabungkan dataset berdasarkan tanggal (dteday)
 df_combined = pd.concat([df_day, df_hour], ignore_index=True)
 
-url_main = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Dashboard/main_data.csv"
-df_combined = pd.read_csv(url_main)
+# url_main = "https://raw.githubusercontent.com/ilham-mulia/Dicoding-Proyek-Analisis-Data/main/Dashboard/main_data.csv"
+# df_combined = pd.read_csv(url_main)
 
 # Judul Dashboard
 st.title("📊 Dashboard Analisis Penyewaan Sepeda 🚲")
